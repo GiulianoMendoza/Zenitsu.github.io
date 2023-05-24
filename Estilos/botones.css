@@ -1,0 +1,38 @@
+
+.categoria{
+    padding-left: 5rem;
+}
+section div ul li{
+    border: none;
+    color: rgb(241, 120, 21);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+section div ul li:hover{
+    color: azure;
+    background-color: rgb(241, 120, 21);
+}
+
+.categoria .filter-item.active{
+    color: azure;
+    background-color: rgb(241, 120, 21)
+}
+.box-container .box.hide{
+    display: none;
+}
+.box-container .box.show{
+    animation: fadeIn .5s ease;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

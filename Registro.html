@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Estilos/Estiloheader.css">
+    <link rel="stylesheet" href="Estilos/Estilosection.css">
+    <link rel="stylesheet" href="Estilos/Registro.css">
+    <link rel="stylesheet" href="Estilos/Estilofooter.css">
+    <link rel="icon" href="Imagenes/r.ico">
+    <script src="Registro.js"></script>
+    <title>zenitsu</title>
+</head>
+
+<body>
+    <!-- Inicio del Header-->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="index.html" class="logo">zenitsu</a><!-- el # es para que no nos redireccione a ningun lugar-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#products">nuevos Ingresos</a></li>
+                <li><a href="seccionhombres.html">Hombres</a></li>
+                <li><a href="seccionmujeres.html">Mujeres</a></li>                
+            </ul>
+        </nav>
+        <div class="icons">
+           <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>-->
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+    </header>
+    <!-- FIN del Header-->
+
+    <!-- formulario con un ID para referirnos a el desde JavaScript -->
+<form attribute="autocomplete" method="POST" id="myForm" onsubmit="return validarForm()">
+    <h1> Registro</h1>
+    <br>
+    <!-- Creamos etiquetas "label" para los campos del formulario -->
+    <label for="nombre">Nombre:</label>
+    <!-- El campo de texto para el nombre y 
+    le damos un ID y un nombre para poder referirnos a él desde JavaScript como en los demas -->
+    <input type="text" placeholder="Nombre" autocomplete="given-name" id="nombre" name="nombre">
+    <label for="apellido">Apellido:</label>
+    <input type="text" placeholder="Apellido" autocomplete="family-name" id="apellido" name="apellido">
+    <label for="dni">DNI:</label>
+    <input type="text" placeholder="Numero de documento" id="dni" name="dni">
+    <label for="email">Correo electrónico:</label>
+    <input placeholder="Email" autocomplete="off" type="email" id="email" name="email">
+    <label for="contraseña">Contraseña:</label>
+    <input type="text" placeholder="contraseña" id="contraseña" name="contraseña">
+    <label for="rcontraseña"> Repetir Contraseña:</label>
+    <input type="text" placeholder="contraseña" id="rcontraseña" name="rcontraseña">
+    <!-- Creamos un botón de envío para enviar el formulario -->
+    <button type="submit">Enviar</button>
+</form>
+    <footer class="footer">
+
+        <div class="fbox-container">
+            <div class="fbox">
+                <h3>Enlaces Rapidos</h3><br>
+                <ul>
+                    <li><a href="#">Inicio</a><br></li>
+                    <li><a href="index.html#products">Ingresos</a><br></li>
+                    <li><a href="seccionhombres.html">Hombres</a><br></li>
+                    <li><a href="seccionmujeres.html">Mujeres</a><br></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <h3>Enlaces Extra</h3><br>
+                <ul>
+                    <li><a href="usuario.html">Cuenta</a><br></li>
+                    <li><a href="carrito.html">Carrito</a><br></li>
+                    <li><a href="megusta.html">Favoritos</a><br></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <h3>Locales</h3><br>
+                <ul>
+                    <li><a href="localesAR.html" target="_blank">Argentina</a><br></li>
+                    <li><a href="localesBR.html" target="_blank">Brasil</a><br></li>
+                    <li><a href="localesCL.html" target="_blank">Chile</a><br></li>
+                    <li><a href="localesPY.html" target="_blank">Paraguay</a><br></li>
+                    <li><a href="localesUY.html" target="_blank">Uruguay</a><br></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <h3>Ayuda y Contacto</h3><br>
+                <ul>
+                    <li><a href="contacto2.html" target="_blank">Escríbenos</a><br></li>
+                    <li><a href="telefono.html">Tel: 11-33223322</a><br></li>
+                    <li><a href="preguntas.html">Preguntas frecuentes</a><br></li>
+                    <li><a href="localesAR.html">Buenos Aires, Argentina</a><br></li>
+                </ul>
+            </div>
+        </div>
+        <div class="credit">
+            23' Creado por <span> Grupo zenitsu</span> | todos los derechos reservados
+        </div>
+
+    </footer>
+    <!--Fin de footer-->
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+.iconos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+.iconos-container .iconos .envio h4{
+    text-align: center;
+}
+.iconos-container .iconos .local h4{
+    text-align: center;
+}
+.iconos-container .iconos .seguro h4{
+    text-align: center;
+}
+.iconos-container .iconos .banco h4{
+    text-align: center;
+}
+.iconos-container .iconos .regalo h4{
+    text-align: center;
+}
+.iconos-container .iconos .atencion h4{
+    text-align: center;
+}
+.iconos-container .iconos .envio{
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    width: 133px;
+    height: 145px;
+}
+.iconos-container .iconos .local{
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    width: 133px;
+    height: 145px;
+}
+.iconos-container .iconos .seguro{
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    width: 133px;
+    height: 145px;
+}
+.iconos-container .iconos .banco{
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    width: 133px;
+    height: 145px;
+}
+.iconos-container .iconos .regalo{
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    width: 133px;
+    height: 145px;
+}
+.iconos-container .iconos .atencion{
+    float: left;
+    padding: 5px;
+
+    margin: 5px;
+    width: 133px;
+    height: 145px;
+}
+@media (max-width:991px) {
+    html {
+        font-size: 50%;
+        /*ajusta la letra un 50% cuando hay un maximo de 991px de pantalla*/
+    }
+
+    header {
+        padding: 2rem;
+        /*da relleno a los 4 lados  de las cajas en header*/
+    }
+
+    section {
+        padding: 2rem;
+        /*da relleno a los 4 lados  de las cajas en section*/
+    }
+
+    footer {
+        padding: 2rem;
+        /*da relleno a los 4 lados  de las cajas en section*/
+    }
+
+    .home {
+        background-position: left;
+        /*establece la posicion inicial de la imagen de fondo*/
+    }
+    .iconos-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        justify-content: center;
+    
+      }
+
+}
+@media (max-width:768px) {
+    header .fa-bars {
+        display: block;
+        /*muestra las barras ocultas cuando hay un maximo de 768px de pantalla*/
+    }
+
+    header .navbar {
+        position: absolute;
+        /*se ubica segun su contenedor*/
+        top: 100%;
+        /*dejo un espacio del 100% desde el margin del contenedor*/
+        left: 0;
+        /*no dejo espacio de la izquierda*/
+        right: 0;
+        /*no dejo espacio desde la derecha*/
+        background: #eee;
+        /*fondo para todo el navbar*/
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        /*borde arriba, solido de tal color*/
+    }
+
+    header .navbar ul li{
+        margin: 0;
+        padding: 0;
+
+    }
+    header .navbar a {
+        margin: 1rem;
+        /*se establece el margen para los cuatros lado*/
+        padding: 1.5rem;
+        /*relleno en los 4 lados*/
+        background: #fff;
+        /*color de fondo*/
+        border: .1rem solid rgba(0, 0, 0, .1);
+        /*borde solido depende color*/
+        display: block;
+        /*se comporta como bloque es decir uno bajo el otro*/
+
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+        /*le da tamaño de 5 del elemento raiz al h3 segun el contenido de contenedor de home y content*/
+    }
+
+    .home .content span {
+        font-size: 2.5rem;
+        /*da tamaño al elemento span dentro de home y content.*/
+    }
+    .iconos-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        justify-content: center;
+    
+      }
+}
+@media (max-width:450px) {
+    /*cuando tiene maximo de 450px de ancho hace todo esto*/
+    html {
+        font-size: 45%;
+        /*ajusta la letra un 45% del html*/
+    }
+    .iconos-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        justify-content: center;
+    
+      }
+
+}
+
+

@@ -1,0 +1,322 @@
+section{
+    padding: 100px;
+    
+}
+section .h1{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    padding: .5rem;
+    margin-left: -100px;
+    position: absolute;
+}
+.container .precio select{
+    border: 1px solid #ffa459;
+    border-radius: .5rem;
+    padding: 4px;
+    margin: 4px;
+    width: 70px;
+    font-size: 1.5rem;
+}
+.container .talle select{
+    border: 1px solid #ffa459;
+    border-radius: .5rem;
+    padding: 4px;
+    margin: 4px;
+    width: 70px;
+    font-size: 1.5rem;
+}
+.container .color select{
+    border: 1px solid #ffa459;
+    border-radius: .5rem;
+    padding: 4px;
+    margin: 4px;
+    width: 70px;
+    font-size: 1.5rem;
+}
+.container  h2{
+    text-align: center;
+}
+.container .talle select option:nth-child(1){
+    display: none;
+}
+.container .precio select option:nth-child(1){
+    display: none;
+}
+.container .color select option:nth-child(1){
+    display: none;
+}
+.container .color select option:nth-child(2){
+    color: white;
+    background-color: grey;
+}
+.container .color select option:nth-child(3){
+    color: white;
+    background-color: orangered;
+}
+.container .color select option:nth-child(4){
+    color: white;
+    background-color: black;
+}
+.container .color select option:nth-child(5){
+    color: white;
+    background-color: rgb(7, 62, 83);
+}
+.ptm{
+    margin: 10px;
+    padding: 0;
+
+}
+.ptm .Hremeras{
+    display: flex;/*para establecer como se comportara cada caja, si en bloque o en linea, en este caso usamos flex y se comporta como cajas en bloque una al lado de la otra*/
+    flex-wrap: wrap;/*nos permite que los elementos hijos permanezcan en una misma linea o puedan fluir en varias lineas*/
+    gap: 1rem;/*un estilo padding, pero nos rellena columnas y filas*/
+    
+}
+.ptm .Hremeras .remera1 {
+    flex: 1 1 10rem;/*propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible Tres valores: flex-grow | flex-shrink | flex-basis */
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);/*box shadow, añade aspecto de sombra al rededor del marco*/
+    border-radius: .5rem;/*borde redondeado*/
+    border: .1rem solid rgba(0,0,0,.1);/*borde de .1rem,solido de color*/
+    position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+}
+
+.ptm .Hremeras .remera1 .remeras{
+    position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+    text-align: center;/*El contenido en línea se centra dentro del cuadro de línea.*/
+    padding: 10px;
+    padding-top: 1rem;/*da relleno a la parte superior*/
+    background-color: #e7e7e7;
+    overflow: hidden;/*establece lo que se muestra cuando el contenido, con hidden no hay scroll, y recorta el contenido para que quepa horizontalmente*/   
+}
+.ptm .Hremeras .remera1 .remeras img{
+    height: 30rem;/*altura de la imagen*/
+}
+.ptm .Hremeras .remera1:hover .remeras img{
+    transform: scale(1.1);/*nos permite modificar el espacio de la imagen*/
+}
+.ptm .Hremeras .remera1  .iconos{
+    position: absolute;/*se ubica segun su contenedor*/
+    bottom: 0;/*especifica la posicion del elemento, es decir -7rem*/
+    left: 0;/*no dejo espacio de la izquierda*/
+    right: 0;/*no dejo espacio desde la derecha*/
+    display: flex;/*cambia el comportamiento de las cajas a flex*/
+}
+.ptm .Hremeras .remera1:hover  .iconos{
+    bottom: 0;/*especifica la posicion del elemento, es decir 0*/
+}
+.ptm .Hremeras .remera1  .iconos a{
+    height: 2rem;/*altura del 5rem al contenido*/
+    line-height: 2rem;/*line height estable distancia entre lineas de texto*/
+    font-size: 1.5rem;/*ajusta la letra del contenido*/
+    width: 50%;/*ancho del 50%*/
+    text-align: center;
+    background: var(--yellow);/*da color al fondo mediante var, que es una funcion que puede usada para insertar el valor de una propiedad personalizada(yellow en este caso)*/
+    color: #fff;/*da color*/
+}
+.ptm .Hremeras .remera1 .iconos .cart-btn{
+    border-left: .1rem solid #fff7;/* esta propiedad establece un borde izquierdo del elemento*/
+    border-right: .1rem solid #fff7;/* esta propiedad establece un borde derecho del elemento*/
+    width: 100%;/*ancho del 100%*/
+
+}
+.ptm .Hremeras .remera1 .iconos a:hover{
+    background: #333;/*fondo*/
+}
+.ptm .Hremeras .remera1 .content h3{
+    font-size: 1.5rem;/*ajusta la letra del contenido*/
+    color: #333;/*da color*/
+}
+.ptm .Hremeras .remera1 .content .price{
+    font-size: 1.3rem;/*le da 2.5rem a el contenido dentro de la clase*/
+    color: #333;/*da color mediante var, que es una funcion que puede usada para insertar el valor de una propiedad personalizada(yellow en este caso)*/
+    font-weight: bolder; /* especifica el grupo o espesor de la letra bolder corresponde a un tipo de fuente más gruesa que el tipo del elemento padre*/
+    padding-top: 1rem;/*da relleno a la parte superior*/
+}
+@media (max-width:768px) {
+    section{
+        position: relative;
+        top: 7rem;
+    }
+    section .h1{
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1;
+        padding: 1rem;
+        margin-left: -5px;
+        position: absolute;
+    }
+    .ptm{
+        margin: 5px;
+        padding: 50px;
+    }
+    .ptm .Hremeras{
+        display: flex;/*para establecer como se comportara cada caja, si en bloque o en linea, en este caso usamos flex y se comporta como cajas en bloque una al lado de la otra*/
+        flex-wrap: wrap;/*nos permite que los elementos hijos permanezcan en una misma linea o puedan fluir en varias lineas*/
+        gap: .5rem;/*un estilo padding, pero nos rellena columnas y filas*/
+        justify-content: center;
+
+        
+    }
+    .ptm .Hremeras .remera1 {
+        flex: 0 0 10rem;/*propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible Tres valores: flex-grow | flex-shrink | flex-basis */
+        box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);/*box shadow, añade aspecto de sombra al rededor del marco*/
+        border-radius: .5rem;/*borde redondeado*/
+        border: .1rem solid rgba(0,0,0,.1);/*borde de .1rem,solido de color*/
+        position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+    }
+    .ptm .Hremeras .remera1 .remeras{
+        position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+        text-align: center;/*El contenido en línea se centra dentro del cuadro de línea.*/
+        padding: 10px;
+        padding-top: 1rem;/*da relleno a la parte superior*/
+        background-color: #e7e7e7;
+        overflow: hidden;/*establece lo que se muestra cuando el contenido, con hidden no hay scroll, y recorta el contenido para que quepa horizontalmente*/   
+    }
+    .p{
+        top: 40%;
+        justify-content: center;
+     }
+}
+@media (max-width:450px) {
+    /*cuando tiene maximo de 450px de ancho hace todo esto*/
+    html {
+        font-size: 45%;
+        /*ajusta la letra un 45% del html*/
+    }
+    section{
+        position: relative;
+        top: 7rem;
+    }
+    section .h1{
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1;
+        padding: 1rem;
+        margin-left: -5px;
+        position: absolute;
+    }
+    .ptm{
+        margin: 5px;
+        padding: 50px;
+    }
+    .ptm .Hremeras{
+        display: flex;/*para establecer como se comportara cada caja, si en bloque o en linea, en este caso usamos flex y se comporta como cajas en bloque una al lado de la otra*/
+        flex-wrap: wrap;/*nos permite que los elementos hijos permanezcan en una misma linea o puedan fluir en varias lineas*/
+        gap: .5rem;/*un estilo padding, pero nos rellena columnas y filas*/
+        justify-content: center;
+    }
+    .ptm .Hremeras .remera1 {
+        flex: 0 0 10rem;/*propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible Tres valores: flex-grow | flex-shrink | flex-basis */
+        box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);/*box shadow, añade aspecto de sombra al rededor del marco*/
+        border-radius: .5rem;/*borde redondeado*/
+        border: .1rem solid rgba(0,0,0,.1);/*borde de .1rem,solido de color*/
+        position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+    }
+    .ptm .Hremeras .remera1 .remeras{
+        position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+        text-align: center;/*El contenido en línea se centra dentro del cuadro de línea.*/
+        padding: 10px;
+        padding-top: 1rem;/*da relleno a la parte superior*/
+        background-color: #e7e7e7;
+        overflow: hidden;/*establece lo que se muestra cuando el contenido, con hidden no hay scroll, y recorta el contenido para que quepa horizontalmente*/   
+    }
+    .p{
+        top: 40%;
+
+     }
+     
+
+}
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 50%;
+        /*ajusta la letra un 50% cuando hay un maximo de 991px de pantalla*/
+    }
+
+    header {
+        padding: 2rem;
+        /*da relleno a los 4 lados  de las cajas en header*/
+    }
+
+    section {
+        padding: 2rem;
+        /*da relleno a los 4 lados  de las cajas en section*/
+    }
+
+    footer {
+        padding: 2rem;
+        /*da relleno a los 4 lados  de las cajas en section*/
+    }
+
+    .home {
+        background-position: left;
+        /*establece la posicion inicial de la imagen de fondo*/
+    }
+    section{
+        position: relative;
+        top: 7rem;
+    }
+    section .h1{
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1;
+        padding: .8rem;
+        margin-left: -5px;
+        position: absolute;
+    }
+    .ptm{
+        margin: 10px;
+        padding: 30px;
+    }
+    .ptm .Hremeras{
+        display: flex;/*para establecer como se comportara cada caja, si en bloque o en linea, en este caso usamos flex y se comporta como cajas en bloque una al lado de la otra*/
+        flex-wrap: wrap;/*nos permite que los elementos hijos permanezcan en una misma linea o puedan fluir en varias lineas*/
+        gap: .5rem;/*un estilo padding, pero nos rellena columnas y filas*/
+        justify-content: center;
+
+        
+    }
+    .ptm .Hremeras .remera1 {
+        flex: 0 0 10rem;/*propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible Tres valores: flex-grow | flex-shrink | flex-basis */
+        box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);/*box shadow, añade aspecto de sombra al rededor del marco*/
+        border-radius: .5rem;/*borde redondeado*/
+        border: .1rem solid rgba(0,0,0,.1);/*borde de .1rem,solido de color*/
+        position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+    }
+    .ptm .Hremeras .remera1 .remeras{
+        position: relative;/*puede estar como no estar la position, porque relative sin determinar ningun valor, es como static.*/
+        text-align: center;/*El contenido en línea se centra dentro del cuadro de línea.*/
+        padding: 10px;
+        padding-top: 1rem;/*da relleno a la parte superior*/
+        background-color: #e7e7e7;
+        overflow: hidden;/*establece lo que se muestra cuando el contenido, con hidden no hay scroll, y recorta el contenido para que quepa horizontalmente*/   
+    }
+    .p{
+        top: 40%;
+        justify-content: center;
+     }
+
+}
